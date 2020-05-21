@@ -12,6 +12,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:request-config>
 	<flow name="worldtime-demo-cicdFlow" doc:id="91aea073-6ad1-4363-bb33-87da8b935154" >
 		<http:listener doc:name="Get /timezone/{region}/{city}" doc:id="398fef7e-0cc3-4468-9e14-b7cfdf52041d" config-ref="HTTP_Listener_config" path="/{region}/{city}"/>
+		<logger level="INFO" doc:name="Logger" doc:id="197ed7b0-9995-4777-8cc2-0cb6181ca9dc" message="#[message]"/>
 		<http:request method="GET" doc:name="HTTPRequest" doc:id="69b32f5a-0c6d-445a-909e-88b73e4a1408" config-ref="HTTP_Request_configuration" path="/{region}/{city}">
 			<http:uri-params ><![CDATA[#[output application/java
 ---
