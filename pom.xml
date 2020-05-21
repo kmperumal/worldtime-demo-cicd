@@ -33,7 +33,8 @@
 					<workers>1</workers>
 					<workerType>Micro</workerType>
 					<applicationName>worldtime-demo-cicd-api</applicationName>
-					<muleVersion>4.2.2</muleVersion>		
+					<muleVersion>4.2.2</muleVersion>
+					<objectStoreV2>true</objectStoreV2>		
 				</cloudHubDeployment>		
 				
 				</configuration>
