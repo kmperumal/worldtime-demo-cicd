@@ -26,6 +26,16 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+				 <cloudHubDeployment>
+					<username>kmperumal05</username>
+					<password>Ranjani@9</password>
+					<environment>Sandbox</environment>
+					<workers>1</workers>
+					<workerType>Micro</workerType>
+					<applicationName>worldtime-demo-cicd-api</applicationName>
+					<muleVersion>4.2.2</muleVersion>		
+				</cloudHubDeployment>		
+				
 				</configuration>
 			</plugin>
 		</plugins>
